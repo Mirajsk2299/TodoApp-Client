@@ -1,0 +1,366 @@
+/*------------- Login designs ---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease;
+}
+
+.login-headre h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-inputs input {
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.login-inputs input::placeholder {
+  color: #aaa;
+}
+
+.login-inputs input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.login-btns {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login-btns button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-btns button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+.login-btns p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #667eea;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.login-btns p:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    margin: 0 15px;
+    padding: 25px 20px;
+  }
+
+  .login-headre h2 {
+    font-size: 22px;
+  }
+}
+
+/*------------- Register designs ---------------*/
+.register-main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 30px 28px;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.6s ease;
+}
+
+.register-heading h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 26px;
+  color: #333;
+}
+
+.register-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.register-inputs input {
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.register-inputs input::placeholder {
+  color: #aaa;
+}
+
+.register-inputs input:focus {
+  border-color: #43cea2;
+  box-shadow: 0 0 0 2px rgba(67, 206, 162, 0.25);
+}
+
+.create-btn {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.create-btn button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-btn button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(24, 90, 157, 0.4);
+}
+
+.create-btn p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #555;
+}
+
+.create-btn span {
+  color: #185a9d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-btn span:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    margin: 0 15px;
+    padding: 25px 20px;
+  }
+
+  .register-heading h2 {
+    font-size: 22px;
+  }
+}
+
+/*------------- Todo designs ---------------*/
+
+.todo-main {
+  min-height: 100vh;
+  padding: 16px;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.todo-header {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.user-info p {
+  font-size: 13px;
+  color: #777;
+}
+
+.logout-btn {
+  padding: 8px 14px;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-heading h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.todo-input {
+  max-width: 700px;
+  margin: 0 auto 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.todo-input button {
+  padding: 12px 16px;
+  background: #ffcc70;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-list {
+  max-width: 700px;
+  margin: 0 auto 12px;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.todo-list input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.todo-list button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.todo-list button:first-of-type {
+  background: #ff4d4d;
+
+  color: #fff;
+}
+
+.todo-list button:nth-of-type(2) {
+  background: #4dabf7;
+
+  color: #fff;
+}
+
+.todo-list button:last-of-type {
+  background: #ffa94d;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .todo-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .todo-input {
+    flex-direction: column;
+  }
+
+  .todo-input button {
+    width: 100%;
+  }
+
+  .todo-list {
+    flex-direction: column;
+  }
+
+  .todo-list input {
+    width: 100%;
+  }
+
+  .todo-list button {
+    width: 100%;
+  }
+}
