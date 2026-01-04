@@ -7,7 +7,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const navigate = useNavigate();
+  const navigateTodo = useNavigate();
 
   const loginHandler = async () => {
     try {
@@ -20,7 +20,7 @@ const Login = () => {
       );
 
       localStorage.setItem("token", res.data.accessToken);
-     navigate("/todo");
+     navigateTodo("/todo");
     } catch (err) {
       alert(err.response.data.message);
       console.log(err.response.data);
