@@ -7,6 +7,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const loginHandler = async () => {
     try {
       const res = await axios.post(
@@ -18,7 +20,7 @@ const Login = () => {
       );
 
       localStorage.setItem("token", res.data.accessToken);
-      window.location = "/todo";
+     navigate("/todo");
     } catch (err) {
       alert(err.response.data.message);
       console.log(err.response.data);
